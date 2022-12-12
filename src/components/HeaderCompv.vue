@@ -84,9 +84,8 @@ header .content {
 header h1,
 header h2 {
   margin: 0;
-}select-cabecalho
-
-header h2 {
+}
+select-cabecalho header h2 {
   text-transform: uppercase;
   margin-top: -0.5em;
 }
@@ -105,6 +104,13 @@ header hgroup {
   color: #fff;
   border: 5px solid #fff;
   padding: 0.5em 3em;
+  font-size: 16px;
+  color: rgba($dark, 0.5);
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -161,8 +167,22 @@ img {
   background: #333;
   color: #fff;
 }
-.select-cabecalho{
-  border-radius: 1%;
-  border: black;
+.select-cabecalho {
+  appearance: none;
+  background-color: #222;
+  border: none ;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 15%;
+  font-family: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  color: #fff;
+}
+
+option {
+  margin: 0;
+  text-align: center;
 }
 </style>
