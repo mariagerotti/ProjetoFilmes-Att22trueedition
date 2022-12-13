@@ -170,15 +170,16 @@ img {
 .select-cabecalho {
   appearance: none;
   background-color: #222;
-  border: none ;
+  border: none;
   padding: 0 1em 0 0;
   margin: 0;
   width: 15%;
-  font-family: inherit;
+  
   cursor: inherit;
   line-height: inherit;
   font-size: inherit;
-  color: #fff;
+  color: #666;
+  
 }
 
 option {
