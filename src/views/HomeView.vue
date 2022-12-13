@@ -40,17 +40,16 @@ body {
   width: 100%;
   place-items: center;
 }
-img {
-  width: 10%;
-  height: 77%;
-  object-fit: cover;
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, transparent, #0004);
-  transform-origin: center;
-  transform: perspective(800px) rotateY(25deg);
-  transition: 0.5s;
-  margin-top: 10%;
+PictureCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
 }
+
+PictureCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .container {
   max-height: 350px;
   display: flex;
