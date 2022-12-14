@@ -19,8 +19,46 @@ export default {
 </script>
 
 <template>
-  <div class="main">
+  <div class="filmeback">
     {{ id }}
     <DescFilme :filme="filme" />
   </div>
 </template>
+
+<style>
+.filmeback {
+  background-color: #333;
+}
+main{
+  margin-top: 10px;
+}
+.main p {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.descMovi {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 100px;
+  margin-top: 1px;
+  font-size: 30px;
+}
+
+.info-movi {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 5px;
+}
+
+.titulo {
+  font-size: 75px;
+}
+.poster-filme-pag{
+  width: 400px;
+}
+</style>

@@ -33,7 +33,7 @@ export default {
       <div class="content">
         <hgroup>
           <h1>
-            <router-link to="/" id="title">
+            <router-link class="routerlink" to="/" id="title">
               <h1><span>IM</span>ovies</h1>
             </router-link>
           </h1>
@@ -67,7 +67,7 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46)
+  background: url(https://i.pinimg.com/564x/85/8b/e8/858be84f6a7fa8c70376b3f222a02b7d.jpg)
     center no-repeat;
   background-size: cover;
 }
@@ -79,6 +79,10 @@ header .content {
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+h1{
+  color:rgb(73, 32, 112)
 }
 
 header h1,
@@ -101,18 +105,11 @@ header hgroup {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border: 5px solid #fff;
   padding: 0.5em 3em;
   font-size: 16px;
-  color: rgba($dark, 0.5);
-  font-weight: 500;
-  transform-origin: 0 0;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.2s ease;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  text-decoration: none;
 }
 
 header .overlay {
@@ -161,6 +158,7 @@ img {
   padding: 10px 30px;
   font-size: 1.3em;
   display: inline-block;
+  
 }
 
 .site nav a:hover {
@@ -174,14 +172,11 @@ img {
   padding: 0 1em 0 0;
   margin: 0;
   width: 15%;
-  
   cursor: inherit;
   line-height: inherit;
   font-size: inherit;
   color: #666;
-  
 }
-
 option {
   margin: 0;
   text-align: center;

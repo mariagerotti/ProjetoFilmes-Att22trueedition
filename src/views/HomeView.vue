@@ -51,18 +51,19 @@ PictureCard:hover {
 }
 
 .container {
+  margin-top: 10%;
   max-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .container:hover img {
   opacity: 0.3;
 }
 .container img:hover {
-  transform: perspective(800px) rotateY(0deg);
   opacity: 1;
 }
 
