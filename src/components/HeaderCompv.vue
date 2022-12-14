@@ -86,8 +86,8 @@ h1 {
   text-decoration: none;
 }
 
-#im-text{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#im-text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 header h1,
