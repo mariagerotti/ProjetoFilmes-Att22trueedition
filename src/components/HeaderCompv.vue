@@ -34,7 +34,7 @@ export default {
         <hgroup>
           <h1>
             <router-link class="routerlink" to="/" id="title">
-              <h1><span>IM</span>ovies</h1>
+              <h1><span id="im-text">IM</span><span>ovies</span> &#x2B50;</h1>
             </router-link>
           </h1>
         </hgroup>
@@ -81,8 +81,13 @@ header .content {
   z-index: 1;
 }
 
-h1{
-  color:rgb(73, 32, 112)
+h1 {
+  color: rgb(73, 32, 112);
+  text-decoration: none;
+}
+
+#im-text{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 header h1,
@@ -158,7 +163,6 @@ img {
   padding: 10px 30px;
   font-size: 1.3em;
   display: inline-block;
-  
 }
 
 .site nav a:hover {

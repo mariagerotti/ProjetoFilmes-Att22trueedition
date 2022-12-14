@@ -22,7 +22,6 @@ export default {
 
 <template>
   <div class="main">
-    
     <div class="container">
       <PictureCard
         v-for="filme of filmes"
@@ -34,24 +33,24 @@ export default {
   </div>
 </template>
 
-
 <style>
 body {
   width: 100%;
   place-items: center;
+  background-color: rgb(57, 57, 57);
 }
 PictureCard {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
 }
 
 PictureCard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  margin-top: 10%;
+  margin-top: 5%;
   max-height: 350px;
   display: flex;
   justify-content: center;
@@ -75,7 +74,7 @@ PictureCard:hover {
   justify-items: stretch;
   align-content: stretch;
 }
-.titulo{
+.titulo {
   font-family: sans-serif;
   margin-left: 10px;
   color: black;

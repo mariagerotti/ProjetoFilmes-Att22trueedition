@@ -2,19 +2,18 @@
 import axios from "axios";
 import DescFilme from "../components/DescFilme.vue";
 export default {
-    components: {DescFilme},
-    props: ["id"],
-    data() {
-        return {
-            filme: {},
-        };
-    },
-    async created() {
-        const url = `https://api.themoviedb.org/3/movie/${this.id}?api_key=a37701b7a0845f3785cd83eb23add599&language=pt-BR`;
-        const { data } = await axios.get(url);
-        this.filme = data;
-    },
-  
+  components: { DescFilme },
+  props: ["id"],
+  data() {
+    return {
+      filme: {},
+    };
+  },
+  async created() {
+    const url = `https://api.themoviedb.org/3/movie/${this.id}?api_key=a37701b7a0845f3785cd83eb23add599&language=pt-BR`;
+    const { data } = await axios.get(url);
+    this.filme = data;
+  },
 };
 </script>
 
@@ -29,8 +28,8 @@ export default {
 .filmeback {
   background-color: #333;
 }
-main{
-  margin-top: 10px;
+main {
+  margin-top: 1px;
 }
 .main p {
   display: flex;
@@ -58,7 +57,7 @@ main{
 .titulo {
   font-size: 75px;
 }
-.poster-filme-pag{
+.poster-filme-pag {
   width: 400px;
 }
 </style>
